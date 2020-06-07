@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    <title>Home Page - Taskmate</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-4">
+      <img src="{% static 'images/pic1.jpg'%}" alt="Picture 1" class="rounded-lg" width="360" height="260">
+    </div>
+    <div class="col-lg-4">
+      <img src="{% static 'images/pic2.jpg'%}" alt="Picture 2" class="rounded-lg" width="360" height="260">
+    </div>
+    <div class="col-lg-4">
+     <img src="{% static 'images/pic3.jpg'%}" alt="Picture 3" class="rounded-lg" width="360" height="260">
+    </div>
+  </div>
+  <div class="row mt-5">
+  <div class="col-md-10 offset-md-1">
+    <center><p class="h1" style="color:orange">Quick and easy to use, Anytime, Anywhere !</p><center>
+    <center><p class="h2" style="color:white">Plan your day better, Get your life organized</p><center>
+    <center><p class="h5" style="color:white">Taskmate lets you keep track of your tasks in one place</p><center>
+    </br>
+    <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg">Let's get Started</button></a><center>
+
+  </div>
+  </div>
+</div>
+{% endblock content %}
