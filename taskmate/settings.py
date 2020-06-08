@@ -25,7 +25,7 @@ SECRET_KEY = '6jbjs=v@cpr!#&h^7g8dluz5&+t*z$15!3jo93uc5%o+3n%8ek'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['taha-todoapp.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
